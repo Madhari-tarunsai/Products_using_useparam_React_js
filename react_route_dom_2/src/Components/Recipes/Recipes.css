@@ -1,0 +1,7 @@
+.recipesContainer{
+    display: flex;
+    gap:40px;
+    flex-wrap: wrap;
+    padding: 50px;
+    
+}

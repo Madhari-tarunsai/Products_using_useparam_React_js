@@ -1,0 +1,63 @@
+/* Container for all the recipe cards */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Individual recipe card styling */
+  .recipecard {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; /* Make card full width by default */
+    max-width: 300px; /* Limit card width to 300px */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .recipecard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .recipe-title {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For small screens (e.g., phones) */
+  @media (max-width: 600px) {
+    .recipecard {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
+  /* For medium screens (e.g., tablets) */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .recipecard {
+      width: 45%; /* Two cards per row */
+    }
+  }
+  
+  /* For larger screens (e.g., desktops) */
+  @media (min-width: 901px) {
+    .recipecard {
+      width: 30%; /* Three cards per row */
+    }
+  }
+  

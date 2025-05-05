@@ -1,0 +1,58 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar container */
+  #navbar {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  
+  /* Logo styling */
+  #navbar h1 {
+    color: white;
+    font-size: 1.8rem;
+  }
+  
+  #navbar h1:hover {
+    color: aliceblue;
+    cursor: pointer;
+    text-shadow: 3px 0px 5px black;
+  }
+  
+  /* Navbar links container */
+  #navbar_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  /* Link base styles */
+  #navbar_1 a {
+    text-decoration: none;
+  }
+  
+  /* Paragraph inside Link */
+  #navbar_1 a > p {
+    border: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+    text-align: center;
+    color: aliceblue;
+    transition: all ease-in-out 0.4s;
+    font-size: large;
+  }
+  
+  /* Hover effect */
+  #navbar_1 a > p:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+  }
+  
